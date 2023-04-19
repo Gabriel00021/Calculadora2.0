@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
     <link rel="stylesheet" href="calculadora.css">
+    
 </head>
 <body>
     <div class="pai">
-        <input class="digitos" type="text">
+        <input id="digitos" class="digitos" type="text">
         
         <div class="buttons">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>+</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>*</button>
-        <button>0</button>
-        <button>.</button>
-        <button>C</button>
-        <button>/</button>
-        <button>=</button>
+        <button onclick="addtela('7')">7</button>
+        <button onclick="addtela('8')">8</button>
+        <button onclick="addtela('9')">9</button>
+        <button onclick="addtela('+')" class="mais">+</button>
+        <button onclick="addtela('4')">4</button>
+        <button onclick="addtela('5')">5</button>
+        <button onclick="addtela('6')">6</button>
+        <button onclick="addtela('-')" class="mais">-</button>
+        <button onclick="addtela('1')">1</button>
+        <button onclick="addtela('2')">2</button>
+        <button onclick="addtela('3')">3</button>
+        <button onclick="addtela('*')" class="mais">*</button>
+        <button onclick="addtela('0')">0</button>
+        <button onclick="addtela('.')">.</button>
+        <button onclick="removetela()">C</button>
+        <button onclick="addtela('/')" class="mais">/</button>
+        <button onclick="result()">=</button>
         
         </div>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
